@@ -66,17 +66,22 @@ i {
 }
 
 .header-infor {
-	display: inline-block;
+	width: 960px;
+	display: block;
 	height: 32px;
 	font-size: 10px;
+	line-height: 32px;
 }
 
 .header-infor .fas,.fab {
-	font-size: 15px;
+	font-size: 14px;
+	margin: 0 4px;
 }
 
 .header-infor .infor-text {
-    color: #ffffff;
+	color: #ffffff;
+	display: inline-block;
+	margin: 0 30px;
 }
 
 .header-infor .infor-text span {
@@ -85,7 +90,10 @@ i {
 }
 
 .header-infor .infor-social {
+	display: block;
 	color: #ffffff;
+	float: right;
+	margin: 0 30px;
 }
 
 #header #nav {
