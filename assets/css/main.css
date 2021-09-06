@@ -86,7 +86,6 @@ a {
 
 .btn:hover {
 	animation: btn-animation forwards;
-	/* opacity: 0.8; */
 }
 	
 
@@ -108,7 +107,6 @@ a {
 .header-infor {
 	width: 960px;
 	margin: 0 auto;
-	display: block;
 	height: 32px;
 	font-size: 10px;
 	line-height: 32px;
@@ -163,7 +161,7 @@ a {
 }
 
 .nav img {
-	width: 65px;
+	width: 70px;
 	height: 65px;
 }
 
@@ -171,6 +169,14 @@ a {
 	list-style: none;
 	margin: 10px;
 	cursor: pointer;
+}
+
+.nav li:hover {
+	font-weight: 500;
+}
+
+.nav a {
+	color: black;
 }
 
 
@@ -184,7 +190,7 @@ a {
 
 	}
 	to {
-		opacity: 0.8;
+		opacity: 0.6;
 		transform: rotateX(0px);
 		background: linear-gradient(90deg, rgba(12,67,98,1) 13%, rgba(227,32,104,1) 100%);
 	}
