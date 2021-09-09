@@ -466,6 +466,11 @@ a {
 	margin-right: 20px;
 }
 
+#services .fas.fa-running {
+	font-size: 30px;
+    padding-left: 6px;
+}
+
 #services .text-heading__small {
 	font-size: 16px;
 	line-height: 1.2;
@@ -566,13 +571,22 @@ a {
 	border-right: none;
 }
 
+#call-back .form select {
+	color: #a0a0a0;
+}
+
 #call-back .form input:focus {
 	outline: none;
 	border-color: #ffffff;
 }
 
+#call-back .form select:focus {
+	outline: none;
+	border-color: #ffffff;
+}
+
 #call-back .form input::placeholder {
-	color: #ffffff;
+	color: #a0a0a0;
 }
 
 #call-back .form option {
