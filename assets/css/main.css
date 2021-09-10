@@ -767,7 +767,7 @@ a {
 	justify-content: flex-start;
 }
 
-#footer .footer-main .text-title__small,.text-paragraph__small {
+#footer .footer-main .text-title__small,#footer .footer-main .text-paragraph__small {
 	color: #ffffff;
 	font-size: 12px;
 	line-height: 1.6;
