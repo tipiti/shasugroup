@@ -238,7 +238,8 @@ a {
 
 /* main */
 #main {
-	width: 1368px;
+	/* width: 80%; */
+	min-width: 1368px;
 	margin: 0 auto;
 	position: relative;
 }
