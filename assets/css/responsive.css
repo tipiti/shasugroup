@@ -20,16 +20,54 @@
 /* mobile: width < 740px */
 @media only screen and (max-width: 46.1875em) {
     /* common */
+    .text-title::before,
     .text-title__small::before {
-        width: 70px;
+        width: 60px;
         height: 5px;
         margin-right: 10px;
     }
 
-    #main {
-        max-width: 740px;
+    #section-1 .text-title,
+    #section-2 .text-title {
+        font-size: 50px;
     }
 
+    #section-1 .text-heading,
+    #section-2 .text-heading {
+        font-size: 80px;
+    }
+
+    #section-1 .text-paragraph,
+    #section-2 .text-paragraph {
+        font-size: 35px;
+        margin: 20px 0;
+        text-align: justify;
+    }
+
+    #section-1 .row,
+    #section-2 .row {
+        width: 175vw;
+        min-width: 700px;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    #section-1 .col-third,
+    #section-2 .col-third {
+        width: 100%;
+        min-width: 1100px;
+        text-align: justify;
+    }
+
+    
+    /* main */
+    #main {
+        max-width: 740px;
+        width: 100vw;
+        overflow: hidden;
+    }
+    
     #header {
         height: 140px;
         width: 100%;
@@ -98,10 +136,16 @@
         width: 100%;
     }
 
+
+    /* section 1 */
     #section-1 {
         width: 100%;
         margin: 0 auto;
         padding: 0 50px;
+    }
+
+    #home {
+        margin-bottom: 0;
     }
 
     #home .slider-sub {
@@ -150,5 +194,80 @@
 
     .text-paragraph__small {
         font-size: 35px;
+    }
+    
+    /* about */
+    #about-us {
+        padding-top: 260px;
+        margin-top: -260px;
+    }
+
+    #about-us .fas {
+        font-size: 60px;
+        padding-top: 18px;
+        margin-right: 60px;
+    }
+
+    /* section 2 */
+    #section-2 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+
+    #our-community .community-box {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #our-community .container-box:nth-child(n) {
+        width: 175vw;
+        min-width: 1200px;
+        max-width: 1200px;
+        height: 400px;
+        border-radius: 40px;
+    }
+    
+    #our-community .box-color,
+    #our-community .box-color-pink {
+        border-radius: 40px;
+    }
+
+    #our-community .box-content {
+        width: 175vw;
+        top: 15%;
+        margin: auto;
+    }
+
+    #our-community .box-content h3 {
+        font-size: 40px;
+    }
+    #our-community .box-content h1 {
+        font-size: 140px;
+    }
+
+    #services {
+        padding-top: 260px;
+        margin-top: -260px;
+    }
+
+    #services .text-heading__small {
+        font-size: 45px;
+    }
+
+    #services .row p {
+        margin: 10px 0;
+    }
+
+    #services .fas,
+    #services .fas.fa-running {
+        font-size: 50px;
+
+    }
+    #services .col-icon {
+        width: 80px;
+        padding-top: 10px;
+        margin-right: 40px;
     }
 }
