@@ -428,6 +428,9 @@ a {
 /* slider small */
 .slider-small {
 	margin: 10px 0;
+	overflow: hidden;
+    width: 100%;
+    height: 250px;
 }
 
 .slider-small img {
@@ -612,6 +615,7 @@ a {
 #partners {
 	width: 100%;
 	height: 110px;
+	overflow: hidden;
 }
 
 #partners img {
