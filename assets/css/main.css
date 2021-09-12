@@ -238,7 +238,7 @@ a {
 
 /* main */
 #main {
-	/* width: 80%; */
+	width: 80%;
 	min-width: 1368px;
 	margin: 0 auto;
 	position: relative;
@@ -296,7 +296,7 @@ a {
 
 #header .nav .nav-infor{
 	width: 960px;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -546,7 +546,7 @@ a {
 	inset: 0;
 	background-color: rgba(24, 71, 97,0.85);
 	height: 100%;
-	border-radius: 10px;
+	border-radius: inherit;
 }
 
 #call-back .form h3 {
