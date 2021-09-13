@@ -368,12 +368,12 @@
     }
 
     #call-back .form {
-        height: inherit;
+        /* height: inherit; */
         padding: 20px;
     }
     
     #call-back .background-color {
-        height: inherit;
+        /* height: inherit; */
         border-radius: inherit;
     }
 
@@ -400,7 +400,7 @@
 
     #footer .footer-nav {
         height: unset;
-        min-height: 40px;
+        min-height: 60px;
         flex-direction: column-reverse;
     }
 
@@ -411,5 +411,8 @@
 
     .back-to-top {
         display: none;
+    }
+     .map .container-map {
+         display: none;
     }
 }

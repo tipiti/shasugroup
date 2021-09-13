@@ -238,8 +238,7 @@ a {
 
 /* main */
 #main {
-	width: 80%;
-	min-width: 1368px;
+	width: 1368px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -577,7 +576,7 @@ a {
 }
 
 #call-back .form select {
-	color: #a0a0a0;
+	color: #ffffff;
 }
 
 #call-back .form input:focus {
@@ -709,10 +708,14 @@ a {
 
 /* map */
 .map {
-	background: url(../img/ban-do-3-20210418170850.png) top center / cover no-repeat;
 	width: 100%;
 	height: 450px;
 	position: relative;
+}
+
+.map-iframe {
+	width: 100%;
+	height: 450px;
 }
 
 .map .container-map {
