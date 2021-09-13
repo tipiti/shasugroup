@@ -57,7 +57,7 @@
                         </div>
 
                         <!-- menu btn -->
-                        <div class="menu-btn">
+                        <div class="menu-btn js-menu-bar">
                             <i class="fas fa-bars"></i>
                         </div>
                     </div>
@@ -534,5 +534,45 @@
             </div>
         </div>
     </div>
+    
+    <!-- menu bar mobile -->
+    <div class="modal js-modal">
+        <div class="modal-container">
+            <img class="menu-logo" src="./assets/img/logo-20210427091955.png" alt="">
+            <a href="#">Home</a>
+            <a href="#about-us">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#our-community">Our Community</a>
+            
+            <div class="modal-close js-modal-close">
+                <i class="fas fa-times-circle"></i>        
+            </div>
+            
+            <div class="social-icon">
+                <a href="https://www.facebook.com/groups/477250560274970" target="blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/company/shasu-group/?viewAsMember=true" target="blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const menu = document.querySelector('.js-menu-bar')
+        const modal = document.querySelector('.js-modal')
+        const modalClose = document.querySelector('.js-modal')
+
+        function showmenu() {
+            modal.classList.add('open')
+        }
+
+        function hidemenu() {
+            modalClose.classList.remove('open')
+        }
+
+        menu.addEventListener('click', showmenu)
+        
+        modalClose.addEventListener('click', hidemenu)
+    </script>
 </body>
 </html>
