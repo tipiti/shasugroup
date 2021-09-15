@@ -430,8 +430,10 @@
         z-index: 9;
         animation: modalMove ease 0.2s;
     }
-
+    
     .modal .modal-container {
+        overflow-x: hidden;
+        overflow-y: auto;
         width: 60%;
         min-width: 210px;
         height: 100%;
@@ -441,8 +443,6 @@
         flex-direction: column;
         padding-top: 90px;
         padding-left: 10px;
-
-
     }
 
     .modal .menu-logo {
@@ -453,11 +453,10 @@
     }
 
     .modal .modal-container a {
-        height: 10vh;
-        max-height: 30px;
+        height: 20px;
         width: 90%;
-        margin: 1% 0;
-        font-size: 3vh;
+        margin: 10px 0;
+        font-size: 15px;
         color: rgb(227, 32, 104);
         font-weight: 700;
         border-bottom: darkblue solid 2px;
@@ -497,5 +496,7 @@
         }
     }
 
-
+    .container-box.one {
+        order: 4;
+    }
 }
