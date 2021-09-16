@@ -213,13 +213,27 @@
         
         <!-- slider small -->
         <div class="slider-small">
-            <img src="./assets/img/sliders/slider-small/img-slider-02-20210412040434.jpg">
-            <img src="./assets/img/sliders/slider-small/blog-post-12-20210419153620.jpg">
-            <img src="./assets/img/sliders/slider-small/blog-post-13-20210419153621.jpg">
-            <img src="./assets/img/sliders/slider-small/blog-post-14-20210419153622.jpg">
-            <img src="./assets/img/sliders/slider-small/blog-post-15-20210419153622.jpg">
-            <img src="./assets/img/sliders/slider-small/blog-post-18-20210419153623.jpg">
-            <img src="./assets/img/sliders/slider-small/blog-post-23-20210419153624.jpg">
+            <div class="slider-small__item">
+                <img src="./assets/img/sliders/slider-small/img-slider-02-20210412040434.jpg">
+            </div>
+            <div class="slider-small__item">
+                <img src="./assets/img/sliders/slider-small/blog-post-12-20210419153620.jpg">
+            </div>
+            <div class="slider-small__item">
+                <img src="./assets/img/sliders/slider-small/blog-post-13-20210419153621.jpg">
+            </div>
+            <div class="slider-small__item">
+                <img src="./assets/img/sliders/slider-small/blog-post-14-20210419153622.jpg">
+            </div>
+            <div class="slider-small__item">
+                <img src="./assets/img/sliders/slider-small/blog-post-15-20210419153622.jpg">
+            </div>
+            <div class="slider-small__item">
+                <img src="./assets/img/sliders/slider-small/blog-post-18-20210419153623.jpg">
+            </div>
+            <div class="slider-small__item">
+                <img src="./assets/img/sliders/slider-small/blog-post-23-20210419153624.jpg">
+            </div>
         </div>
 
         <!-- section 2 -->
@@ -367,16 +381,16 @@
 
             <!-- partners -->
             <div id="partners">
-                <img src="./assets/img/partners/artelia.png">
-                <img src="./assets/img/partners/bim.png">
-                <img src="./assets/img/partners/cj.png">
-                <img src="./assets/img/partners/cote.png">
-                <img src="./assets/img/partners/hyosung.png">
-                <img src="./assets/img/partners/mercedes.png">
-                <!-- <img src="./assets/img/partners/nova.png"> -->
-                <!-- <img src="./assets/img/partners/saitex.png"> -->
-                <!-- <img src="./assets/img/partners/TTC.png"> -->
-                <!-- <img src="./assets/img/partners/vingroup.png"> -->
+                <div class="partners__item"><img src="./assets/img/partners/artelia.png"></div>
+                <div class="partners__item"><img src="./assets/img/partners/bim.png"></div>
+                <div class="partners__item"><img src="./assets/img/partners/cj.png"></div>
+                <div class="partners__item"><img src="./assets/img/partners/cote.png"></div>
+                <div class="partners__item"><img src="./assets/img/partners/hyosung.png"></div>
+                <div class="partners__item"><img src="./assets/img/partners/mercedes.png"></div>
+                <div class="partners__item"><img src="./assets/img/partners/nova.png"></div>
+                <div class="partners__item"><img src="./assets/img/partners/saitex.png"></div>
+                <div class="partners__item"><img src="./assets/img/partners/TTC.png"></div>
+                <div class="partners__item"><img src="./assets/img/partners/vingroup.png"></div>
             </div>
 
             <!-- community -->
@@ -537,23 +551,23 @@
     
     <!-- menu bar mobile -->
     <div class="modal js-modal">
-        <div class="modal-container">
+        <div class="modal-container js-modal-container">
             <img class="menu-logo" src="./assets/img/logo-20210427091955.png" alt="">
             <a href="#">Home</a>
             <a href="#about-us">About Us</a>
             <a href="#services">Services</a>
             <a href="#our-community">Our Community</a>
             
-            <div class="modal-close js-modal-close">
-                <i class="fas fa-times-circle"></i>        
-            </div>
             
             <div class="social-icon">
                 <a href="https://www.facebook.com/groups/477250560274970" target="blank"><i class="fab fa-facebook"></i></a>
                 <a href="https://www.linkedin.com/company/shasu-group/?viewAsMember=true" target="blank"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
-
+            
+        </div>
+        <div class="modal-close js-modal-close">
+            <i class="fas fa-times-circle"></i>        
         </div>
     </div>
 
@@ -561,6 +575,7 @@
         const menu = document.querySelector('.js-menu-bar')
         const modal = document.querySelector('.js-modal')
         const modalClose = document.querySelector('.js-modal')
+        // const modalContainer = document.querySelector('.js-modal-container')
 
         function showmenu() {
             modal.classList.add('open')
@@ -568,11 +583,16 @@
 
         function hidemenu() {
             modalClose.classList.remove('open')
+            event.stopPropagation
         }
 
         menu.addEventListener('click', showmenu)
         
         modalClose.addEventListener('click', hidemenu)
+
+        // modalContainer.addEventListener('click', function (event) {
+        //     event.stopPropagation()
+        // })
     </script>
 </body>
 </html>

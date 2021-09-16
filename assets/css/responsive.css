@@ -3,6 +3,20 @@
     #header .nav .menu-btn {
 	display: none;
     }
+
+    body::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    body::-webkit-scrollbar-track {
+        background-color: darkgray;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    }
+
+
 }
 
 /* tablet & mobile: width < 1024px */
@@ -10,14 +24,14 @@
    
 } */
 
-/* tablet: width >= 740px and width < 1024px */
+/* tablet: width >= 740px and zwidth < 1024px */
 /* @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
     #header .nav .menu-btn {
 	display: none;
     }
 } */
 
-/* mobile: width < 740px */
+/* mobile: width < 739px */
 @media only screen and (max-width: 46.1875em) {
     /* common */
     .text-title::before,
@@ -74,6 +88,7 @@
         overflow: hidden;
         min-width: unset;
     }
+
     
     /* header */
     #header {
@@ -427,7 +442,7 @@
         bottom: 0;
         right: 0;
         background-color: rgba(0,0,0,0.4);
-        z-index: 9;
+        z-index: 10;
         animation: modalMove ease 0.2s;
     }
     
@@ -441,20 +456,21 @@
         background-color: rgb(255, 255, 255);
         display: flex;
         flex-direction: column;
-        padding-top: 90px;
-        padding-left: 10px;
+        padding-top: 45px;
+        padding: 10px;
+        float: right;
+        text-align: right;
     }
 
     .modal .menu-logo {
         width: 25vh;
         min-width: 100px;
-        max-width: 150px;
-        margin: 0 auto;
+        max-width: 140px;
+        margin: 15px auto;
     }
 
     .modal .modal-container a {
         height: 20px;
-        width: 90%;
         margin: 10px 0;
         font-size: 15px;
         color: rgb(227, 32, 104);
@@ -465,13 +481,12 @@
     .modal .fa-times-circle {
         font-size: 30px;
         position: absolute;
-        top: 90px;
-        right: 5%;
+        top: 35px;
+        right: 15px;
     }
 
     .modal .social-icon {
         display: flex;
-        width: 90%;
         margin-top: 1vh;
         justify-content: space-around;
     }
@@ -488,7 +503,7 @@
 
     @keyframes modalMove {
         from {
-            transform: translateX(-100%);
+            transform: translateX(100%);
         }
 
         to {
