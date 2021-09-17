@@ -241,6 +241,9 @@ a {
 	width: 1368px;
 	margin: 0 auto;
 	position: relative;
+	display: none;
+	transition: opacity 1s ease-in;
+	opacity: 0;
 }
 
 #header {
